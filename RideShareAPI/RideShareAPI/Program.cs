@@ -12,6 +12,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<RideShareAPIDbContext>(options => options.UseInMemoryDatabase("RideShareDb"));
 
+//builder.Services.AddAutoMapper(typeof(Program));
+//builder.Services.AddAntiforgery();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
